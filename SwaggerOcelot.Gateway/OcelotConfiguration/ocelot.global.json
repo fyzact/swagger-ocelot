@@ -1,0 +1,8 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:59885",
+    "ServiceDiscoveryProvider": {
+      "Type": "AppConfiguration"
+    }
+  }
+}
