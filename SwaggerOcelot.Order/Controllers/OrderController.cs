@@ -16,7 +16,7 @@ namespace SwaggerOcelot.Order.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "order1", "order" };
+            return new string[] { "order1", "order2" };
         }
     }
 }

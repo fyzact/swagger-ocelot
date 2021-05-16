@@ -3,7 +3,7 @@
     {
       "DownstreamPathTemplate": "/api/{everything}",
       "ServiceName": "order",
-      "UpstreamPathTemplate": "/api/order-gate/{everything}",
+      "UpstreamPathTemplate": "/order-gate/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
       "SwaggerKey": "order"
     }

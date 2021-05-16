@@ -20,7 +20,7 @@ namespace SwaggerOcelot.Order
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>().UseUrls("http://localhost:5001");
                 });
     }
 }

@@ -27,7 +27,7 @@ namespace SwaggerOcelot.Gateway
             })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>().UseUrls("http://localhost:500");
                 });
     }
 }
