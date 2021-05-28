@@ -1,16 +1,10 @@
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using MMLib.SwaggerForOcelot.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SwaggerOcelot.Gateway
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
@@ -27,7 +21,7 @@ namespace SwaggerOcelot.Gateway
             })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>().UseUrls("http://localhost:500");
+                    webBuilder.UseStartup<Startup>().UseUrls(new string[] { "http://localhost:5000" });
                 });
     }
 }
